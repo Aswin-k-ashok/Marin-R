@@ -1,4 +1,4 @@
-.my-row li{
+.r-list li{
     list-style: none;
     margin-left: em;
 }
@@ -6,10 +6,4 @@
 .my-logo{
     height: 4em;
     width: 4.5em;
-}
-
-.my-navBar{
-    position: sticky;
-    width: 100%;
-    top: 0em;
 }
