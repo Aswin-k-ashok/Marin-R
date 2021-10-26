@@ -7,3 +7,9 @@
     height: 4em;
     width: 4.5em;
 }
+
+.my-navBar{
+    position: sticky;
+    width: 100%;
+    top: 0em;
+}
