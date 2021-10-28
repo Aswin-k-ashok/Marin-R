@@ -75,7 +75,13 @@ html body nav.navbar.navbar-expand-lg.navbar-light.bg-white{
 }
 
 .madeForFun button{
-    padding:1em 3em 1em 3em; background-color: #01A1DF; border: none ; color: black;font-size: 1.5em; font-weight: 700; border-radius: 0.25em;
+    padding:1em 3em 1em 3em;
+     background-color: #01A1DF;
+     border: none ;
+     color: black;
+     font-size: 1em; 
+     font-weight: 700; 
+     border-radius: 0.25em;
 }
 
 /* top cards */
@@ -101,7 +107,7 @@ html body section.top-cards div.container-fluid div.row.my-row.d-flex.j div.col.
     background-color: black;
     color: white;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 1.5em;
     border-radius: 0.5em;
 }
 html body div.container-fluid section.top-cards div.container-fluid div.row.my-row.d-flex.j div.col.my-coulmn.my-textCol{
