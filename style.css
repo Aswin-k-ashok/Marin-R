@@ -10,6 +10,10 @@ h1{
     font-weight: 700 !important;
 }
 
+section{
+    margin: 10em 0 10em 0;
+}
+
 .r-list li{
     list-style: none;
     margin-left: em;
@@ -70,17 +74,38 @@ html body nav.navbar.navbar-expand-lg.navbar-light.bg-white{
     margin-top: 3em;
 }
 
+.madeForFun button{
+    padding:1em 3em 1em 3em; background-color: #01A1DF; border: none ; color: black;font-size: 1.5em; font-weight: 700; border-radius: 0.25em;
+}
 
+/* top cards */
 
 
 .top-cards .my-row{
     margin-top: 50px;
-    margin-left: 6em;
-    margin-right: 6em;
+    
 }
 
 li{
     list-style: none;
+}
+html body section.top-cards div.container-fluid div.row.my-row div.col.my-coulmn img{
+    margin: 0;
+    padding: 0;
+    border-radius: 0.5em;
+}
+
+html body section.top-cards div.container-fluid div.row.my-row.d-flex.j div.col.my-coulmn.my-textCol button{
+    padding:1em 3em 1em 3em ;
+    margin:0em;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    border-radius: 0.5em;
+}
+html body div.container-fluid section.top-cards div.container-fluid div.row.my-row.d-flex.j div.col.my-coulmn.my-textCol{
+    font-size: 1em;
 }
 
 
@@ -101,6 +126,7 @@ section .FootCol{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
   /* Media Query for Mobile Devices */
@@ -113,7 +139,7 @@ section .FootCol{
     }
 
     .top-cards .my-row{
-    margin: 0;
+    margin-top: 1em !important;
     }
 }
   
