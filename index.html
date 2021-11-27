@@ -1,85 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/09a753dc3d.js" crossorigin="anonymous"></script>
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="script.js"></script>
+  <title>Marin bikes | Homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/09a753dc3d.js" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+      </style>
+
+  <style>
+    .hide {
+      display: flex;
+    }
+  </style>
+
 </head>
+
+
 <body>
-    
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white" style="position: sticky; top:0em; width: 100%; z-index: 1000;">
-        <a class="navbar-brand" href="#"><img class="my-logo" src="https://cdn.shopify.com/s/files/1/0001/4928/files/marin-logo-black_6a842783-faa5-49d3-a4c8-5bcaf9da7763_1200x1200.png?v=1618364185" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
-              <a class="nav-link" href="#">BIKES<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FIND A DEALER</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">RIDERS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">INSIDE MARIN</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">NEWS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">SHOP</a>
-              </li>
+  <nav class="navbar" style="position: sticky; top: 0px; background-color: white; z-index: 500;">
 
-          </ul>
-       
-          <span class="navbar-text">
-            <ul class="r-list d-flex flex-row">
-                <li class="mr-5"><a href=""><i class="fas fa-search"></i></a></li>
-                <li><a href=""><img src="https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/language-switcher/_flagIcon1x/in-2x.png"
-                    alt=""></a></li>
-              </ul>
-          </span>
+
+    <div class="leftmenu">
+
+      <div class="brand-title"><img class="my-logo"
+          src="https://cdn.shopify.com/s/files/1/0001/4928/files/marin-logo-black_6a842783-faa5-49d3-a4c8-5bcaf9da7763_1200x1200.png?v=1618364185"
+          alt=""></div>
+
+      <div class="navbar-links " id="gone">
+        <ul id="dr" class="myDropdown mt-4">
+          <li>BIKES</li>
+          <li>FIND A DEALER</li>
+          <li>RIDERS</li>
+          <li>INSIDE MARIN</li>
+          <li>NEWS</li>
+          <li>SHOP</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div>
+      <ul class="rightlist pt-5">
+        <li><i class="fas fa-search" style="font-size:1.75em"></i></li>
+        <li><img src="https://www.marinbikes.com/assets/img/flags/in-2x.png" alt="" style="height: 2em; border-radius: 0.2em;"></li>
+        <li>
+          <button href="" onclick="myFunction()" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </li>
+
+      </ul>
+    </div>
+
+  </nav>
+
+  <section class="cover-area" style="margin-top: -2em;">
+
+    <div class="container-fluid">
+      <div class="container-fluid somesection">
+        <div class="row col-xs-6">
+          <img
+            src="https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/mod/hero/image/_heroStandard1676X786/Marin-Bikes-DSX-FS_small.jpg"
+            class="card-img">
         </div>
-      </nav>
+        <div class="col-xs-3 col-sm-offset-4 overlay-text p-5" style="background-color: black; border-radius: 0 0.2em 0.2em 0;" >
+          <h1 class="madeFF" style="font-size: 1em; font-weight: 900;">MADE FOR FUN SINCE 1986</h1>
+          <button class="madeButton" style="
+          font-size: 0.4em;
+          padding: 1em;
+          background-color: var(--marblu);
+          border-radius: 0.2em;
+          border: none;
+          font-weight: 700;">
+            BROWSE ALL MARIN BIKES
+          </button>
+        </div>
+      </div>
+    </div>
 
-      <!-- cover section -->
 
-     <!-- Background image -->
+  </section>
 
 
+  <!-- top cards -->
+  <section class="top-cards">
+
+    <div class="container mt-1 mb-4" >
+      <div class="row  w-100" id="row-Margin">
+        <div class="col-sm-12 col-md-6">
+          <img class="img-fluid"
+            src="https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/mod/hightlight/_highlightWidth697/E-BIKES-1.png"
+            alt="">
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+          <h1>E-BIKE WHAT'S THE DEAL</h1>
+          <h4>check out handy guide for everything electric</h4>
+          <button class="top-button">LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-1 mb-4">
+      <div class="row  w-100">
+
+        <div class="col-sm-12 col-md-6">
+          <h1>DUNCAN SHOWS YOU</h1>
+          <h4>Trials legend Duncan Shaw has a series on our YouTube channel where he covers everything from how to
+            bunnyhop right through to commuting in a sustainable manner. A new video is posted every 10 days, so if you
+            want to see or learn something specific, let Duncan know in the comments.</h4>
+          <button class="top-button">PLAYLIST IS HERE</button>
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+          <img class="img-fluid"
+            src="https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/mod/hightlight/_highlightWidth697/Duncan-Shows-you-How-to-front-pivot.png"
+            alt="">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container mt-1 mb-4">
+      <div class="row  w-100">
+        <div class="col-sm-12 col-md-6">
+          <img class="img-fluid"
+            src="https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/mod/hightlight/_highlightWidth697/EVANPOM.png"
+            alt="">
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+          <h1>EVANPOM</h1>
+          <h4>Hailing from Northern California Evan Mercure is an absolute ripper! Evan and buddy JT have captured
+            Evan's raw and unique style in "Evanpom"</h4>
+          <button>WATCH HERE</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-1 mb-4">
+      <div class="row  w-100">
+
+        <div class="col-sm-12 col-md-6">
+          <h1>WHERE IS MY BIKE ?</h1>
+          <h4>Our Brand Director Aaron Abrams gives us first hand insight into the supply chain challenges faced by the
+            cycle industry and explains why your new bike might be taking a little longer than expected to get to you.
+          </h4>
+          <button>LEARN MORE</button>
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+          <img class="img-fluid"
+            src="https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/mod/hightlight/_highlightWidth697/Where-is-my-bike-2.png"
+            alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- mid cards -->
+
+  <section class="mid-card">
+
+    <div class="container">
       <div class="row">
-
-        <div class="col-md-12 col-sm-12 top-20 ">
-            <div class="view w-100 h-auto img-responsive" style="background-image: url('https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/mod/hero/image/_heroStandard1676X786/Marin-Bikes-DSX-FS_small.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; padding-top:20em ;width: 100%;">
-
-                <div class="row my-auto">
-                    <div class="col-md-6 col-lg-4 sm-12 bg-black ">
-                        <div class="coverCard">
-                            <h1>MADE FOR FUN SINCE 1968</h1>
-                        </div>
-                    </div>
-                </div>
-    
-              </div>
+        <div class="col" style="display: flex; flex-direction: column; align-items: center; text-align: center; ">
+          <h1>THE MARIN COLLECTION</h1>
+          <P  style="font-weight: 500; font-size: 1.3em; font-family: 'Segoe UI';">Marin Bikes offers a world-class liineup of critically-acclaimed mountain, drop bar, fitness/transit and
+            <br> kids bikes, designed by passionate crew of riders in Northern California.</P>
         </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row d-flex flex-row justify-content-around align-items-center">
+        <div class="col-sm-12 col-md-6 mt-1">
+
+          <div class="card" style="width: 100%;">
+            <img
+              src="https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/mod/media2col/_mod2Col709X335/hardtail_homepage_1456.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">HARDTAIL</h1>
+
+              <a href="#" class=""
+                style="background-color: black; color: white; padding:0.5em; border-radius: 0.3em; text-decoration: none; font-weight: 700; ">VIEW
+                BIKES</a>
+            </div>
+          </div>
+
         </div>
-            
-           
-       
+
+        <div class="col-sm-12 col-md-6 mt-1">
+          <div class="card" style="width: 100%;">
+            <img
+              src="https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/mod/media2col/_mod2Col709X335/full-suspension.jpeg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">FULL SUSPENSION</h1>
+
+              <a href="#" class=""
+                style="background-color: black; color: white; padding:0.5em; border-radius: 0.3em; text-decoration: none; font-weight: 700; ">VIEW
+                BIKES</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row d-flex flex-row justify-content-around align-items-center">
+        <div class="col-sm-12 col-md-6 mt-1">
+
+          <div class="card" style="width: 100%;">
+            <img
+              src="https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/mod/media2col/_mod2Col709X335/fitness-transit2.jpeg"
+              alt="...">
+            <div class="card-body">
+              <h1 class="card-title">FITNESS / TRANSIT</h1>
+
+              <a href="#" class=""
+                style="background-color: black; color: white; padding:0.5em; border-radius: 0.3em; text-decoration: none; font-weight: 700; ">VIEW
+                BIKES</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-12 col-md-6 mt-1">
+          <div class="card" style="width: 100%;">
+            <img
+              src="https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/mod/media2col/_mod2Col709X335/drop-bar.jpeg"
+              alt="...">
+            <div class="card-body">
+              <h1 class="card-title">DROP BAR</h1>
+
+              <a href="#" class=""
+                style="background-color: black; color: white; padding:0.5em; border-radius: 0.3em; text-decoration: none; font-weight: 700; ">VIEW
+                BIKES</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row d-flex flex-row justify-content-around align-items-center">
+        <div class="col-sm-12 col-md-6 mt-1">
+
+          <div class="card" style="width: 100%;">
+            <img
+              src="https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/mod/media2col/_mod2Col709X335/PME2-ebike.jpeg"
+              alt="...">
+            <div class="card-body">
+              <h1 class="card-title">EBIKES</h1>
+
+              <a href="#" class=""
+                style="background-color: black; color: white; padding:0.5em; border-radius: 0.3em; text-decoration: none; font-weight: 700; ">VIEW
+                BIKES</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-12 col-md-6 mt-1">
+          <div class="card" style="width: 100%;">
+            <img
+              src="https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/mod/media2col/_mod2Col709X335/SQ24-kids2.jpeg"
+              alt="...">
+            <div class="card-body">
+              <h1 class="card-title">KIDS</h1>
+
+              <a href="#" class=""
+                style="background-color: black; color: white; padding:0.5em; border-radius: 0.3em; text-decoration: none; font-weight: 700; ">VIEW
+                BIKES</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+  <!-- last cards -->
+
+  <section class="last-card">
+    <div class="container mt-5">
+      <div class="row d-flex justify-content-center ">
+        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+          <div class="card" style="width: 90%;background: black; color: white;">
+            <img
+              src="https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/mod/media3col/_mod3Col523X289/yt_icon_rgb.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">YOU TUBE</h1>
+              <p>Did you know we have a YouTube channel?</p>
+              <a href="#" class=""
+                style="background-color: #01A1DF; color: black; padding:0.5em; border-radius: 0.3em; text-decoration: none; font-weight: 700; ">VIEW
+                BIKES</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+          <div class="card" style="width: 90%;background: black; color: white;">
+            <img
+              src="https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/mod/media3col/_mod3Col523X289/Marin-News-968x535.jpeg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">MARIN NEWS & REVIEWS</h1>
+              <p>Read it here first, all the latest happenings from your favorite bike brand</p>
+              <a href="#" class=""
+                style="background-color: #01A1DF; color: black; padding:0.5em; border-radius: 0.3em; text-decoration: none; font-weight: 700; ">VIEW
+                BIKES</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+          <div class="card" style="width: 90%; background: black; color:white">
+            <img
+              src="https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/mod/media3col/_mod3Col523X289/Dealer-image-new.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">FIND A DEALER</h1>
+              <p>Support your local Marin dealer-your destination for our bikes, as well as professional service</p>
+              <a href="#" class=""
+                style="background-color: #01A1DF; color: black; padding:0.5em; border-radius: 0.3em; text-decoration: none; font-weight: 700; ">VIEW
+                BIKES</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
 
 
-<!-- bootstrap js -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+  <!-- footer section -->
+  <section style="margin:0;">
+
+    <div class="container-fluid bg-info d-flex py-4 justify-content-between">
+      <div class="container text-center" >
+          <h4>SIGN UP FOR THE MARIN NEWSLETTER</h4>
+        <div class="d-flex justify-content-center py-3">
+          <input type="text" class="w-50 " id="foot-input" placeholder="your@email.com"> <button style="margin-left: 1em;" id="signUp">SIGN UP</button>
+        </div>
+        <h5>By submitting your email address you agree to the <u>Terms & Conditions</u></h5>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-info py-5">
+
+      <div class="row py-5">
+        <div class="col-md-3 col-sm-6">
+          <ul>
+            <li>
+              <h3>BIKES</h3>
+            </li>
+            <li>
+              <p>All Marin Bikes</p>
+            </li>
+            <li>
+              <p>Technology</p>
+            </li>
+            <li>
+              <p>Bike Registration</p>
+            </li>
+            <li>
+              <p>Recalls / Safety</p>
+            </li>
+            <li>
+              <p>Archive</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <ul>
+            <li>
+              <h3>FIND A DEALER</h3>
+            </li>
+            <li>
+              <p>Dealer Locatior</p>
+            </li>
+            <li>
+              <p>International Distributors</p>
+            </li>
+            <li>
+              <p>Demo Tour & Events</p>
+            </li>
+            <li>
+              <p>Become A Dealer</p>
+            </li>
+            <li>
+              <p>Dealer Login</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <ul>
+            <li>
+              <h3>INSIDE MARIN</h3>
+            </li>
+            <li>
+              <p>Green Bear Initiative</p>
+            </li>
+            <li>
+              <p>The Marin Story</p>
+            </li>
+            <li>
+              <p>Careers</p>
+            </li>
+            <li>
+              <p>FAQ</p>
+            </li>
+            <li>
+              <p>Tech Documents</p>
+            </li>
+            <li>
+              <p>Advocacy</p>
+            </li>
+            <li>
+              <p>Contact Us</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <ul>
+            <li>
+              <h3>NEWS & REVIEWS</h3>
+            </li>
+            <li>
+              <p>News & Reviews</p>
+            </li>
+            <li>
+              <p>Events</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <ul>
+            <li>
+              <h3>SHOP</h3>
+            </li>
+            <li>
+              <p>Marin Webstore</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <!-- social and address section -->
+
+
+
+  <section class="last-Foot" style="margin:0">
+    <div class="container-fluid bg-info ">
+      <div class="row ">
+
+        <div class="col d-flex justify-content-between">
+
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="79" height="91" viewBox="0 0 79 91"><g fill="#000" fill-rule="nonzero"><path d="M14.542 82.53c-.21.28-3.286 4.48-3.286 4.55l-.07.07-3.356-4.62c-.21-.28-.42-.63-1.188-.63H4.195V91h2.377v-6.44l4.614 6.3 4.614-6.3V91h2.377v-9.03H15.73c-.699 0-.979.28-1.188.56zm37.612-.56h2.517V91h-2.517v-9.03zm16.43 0v6.58l-5.524-6.02c-.28-.28-.56-.56-1.328-.56h-2.447V91h2.517v-6.58l5.523 6.02c.21.28.56.56 1.258.56H71.1v-9.03h-2.517zm-39.92 0h-2.657L21.043 91H23.7l.979-1.82h5.243l.979 1.75h2.657l-4.894-8.96zm-2.937 5.46l1.678-3.08 1.608 3.08h-3.286zm18.807-5.46h-8.11V91h2.517v-7.07h5.593c.978 0 1.048.7 1.048 1.12 0 .91-.839 1.12-.839 1.12l-3.495.98 3.635 3.78h3.006l-2.726-2.87 1.049-.35c.978-.35 1.677-1.33 1.747-2.59 0-.98.14-3.15-3.425-3.15zM8.949 26.67l7.76-5.67 7.76 5.67-3.006-9.17 7.76-5.6h-9.578L16.71 2.8l-2.936 9.1H4.125l7.83 5.6-3.006 9.17zM3.845 47.81v1.12l1.049.56-.07-.7.979-.84c1.118-.98 2.237.07 2.237.07l-2.237 1.82.978.42s.42.14.84.07c.419-.07 3.984-.7 3.984-.7l.42-.28 1.957 1.33-.21-1.19 1.888 1.26-.21-1.05 1.958 1.26-.21-1.12 1.119.77 10.207-15.33h-3.636l.77-1.12-2.308.35.63-.84-2.238.35.7-.98-9.788 1.33c-.14-.56-.49-1.12-.979-1.47-1.048-.7-2.517-.42-3.216.63-.42.7-.49 1.54-.21 2.24-.838.63-1.677 1.47-2.307 2.45-1.887 2.8-1.607 5.95-1.607 5.95l-2.238 3.92 1.119.49.63-.77zm3.496-6.44v2.31l-1.888.49 1.888-2.8z"></path><path d="M71.73 48.58v-1.05c0-6.44-4.965-11.69-11.257-12.11v-.07H32.09l4.545-6.86h11.185l-1.607 2.52h19.155L78.371 11.2H65.227l2.168-3.36H50.336l1.888-2.8a2.44 2.44 0 002.587-1.12c.769-1.19.42-2.73-.7-3.5a2.551 2.551 0 00-3.495.7c-.63.91-.56 2.1.07 2.94L17.268 54.39c-2.936.7-7.9 1.89-8.53 2.03-.978.21-1.957.84-1.957.84L0 61.6l1.678-.28L.21 62.51l2.027-.56L.42 63.42l2.028-.56-1.818 1.47 8.81-2.03c.488.07 2.306.28 2.306.28l-.21.42-7.41 11.2 1.538.98 7.69-11.62 1.888-.77-.56 1.33 2.098-.91-.42.98 2.098-.91-.42 1.12 3.006-1.26c.14 4.06 1.259 5.53 1.259 5.53l.56-.56v1.82l.698-.7v1.75l.77-.77v2.94l-5.384 1.75h2.097l-2.097.98h2.097l-2.097.98h2.097l-2.097.98 7.62-.07h2.238c1.258 0 2.237-1.05 2.237-2.31v-5.04l.769.7-.07-7.07h7.97l-.84-.84h2.238l-.7-.7h2.238l-.769-.77h4.754v.35c0 4.76 1.258 6.51 1.258 6.51l.56-.56v1.82l.699-.7v1.75l.769-.77v2.94l-5.383 1.75h2.097l-2.097.98h2.097l-2.097.98h2.097l-2.097.98 7.62-.07h2.237c1.259 0 2.237-1.05 2.237-2.31v-5.04l.77.7-.07-8.05c0 .07 0 .14.07.21 1.118 4.69 2.656 6.02 2.656 6.02l.42-.7.419 1.82.49-.84.419 1.68.629-.98.35 1.54.559-.91v2.31l-5.383 1.75h2.097l-2.097.98h2.097l-2.097.98h2.097l-2.097.98 7.62-.07h2.237c1.259 0 2.237-1.05 2.237-2.31v-4.55l.91.84-.07-13.51.838.63V48.58zM64.038 9.59l-2.237 3.36h13.283L64.319 29.19H49.567l1.678-2.52H37.822L49.078 9.59h14.96zM52.154 5.04l-1.888 2.8 1.888-2.8z"></path><path d="M54.042 17.99c.839.42.629 1.54.14 2.52-1.259 2.17-3.846 3.57-6.013 3.57s-3.146-1.4-1.888-3.57c.56-.91 1.678-2.1 3.007-2.52l.07-.07c-.7-.35-.49-1.33 0-2.24 1.118-1.96 3.565-3.43 5.662-3.43 2.517 0 2.867 1.47 1.748 3.43-.56.91-1.468 1.82-2.726 2.31zm-3.007 1.12c-.769 0-1.817.56-2.237 1.33-.42.77-.21 1.4.63 1.4.908 0 1.817-.63 2.307-1.4.489-.77.14-1.33-.7-1.33zm2.727-4.62c-.77 0-1.538.49-2.027 1.33-.42.77-.07 1.19.559 1.19.699 0 1.538-.42 1.957-1.19.42-.77.28-1.33-.49-1.33zm4.474 12.53c-1.817 0-2.866-1.33-1.538-3.71.42-.7.979-1.4 1.608-2.03l6.712-6.09h2.796l-5.033 4.55c2.307-.21 2.726 1.26 1.538 3.29-1.538 2.87-4.195 3.99-6.083 3.99zm3.076-5.18c-.699 0-1.538.42-2.097 1.4-.56.98-.28 1.4.42 1.4.559 0 1.538-.42 2.097-1.4.56-.98.28-1.4-.42-1.4z"></path></g></svg>
+          </div>
+
+          <ul class="d-flex flex-column text-center" id="FootIcons">
+            <li><i class="fab fa-facebook-square"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-vimeo"></i>
+              <i class="fab fa-youtube"></i>
+            </li>
+            <li>
+              <h3>Marin Bikes • 1450 Technology Lane, Suite 100, Petaluma, CA 94954 • United States</h3>
+            </li>
+            <li>
+              <p>WEEE Registration Number: DE 47208324WEEE</p>
+            </li>
+          </ul>
+
+          <ul class="d-flex flex-column text-end">
+            <li class="Priv"><a href="">Privacy Policy</a></li>
+            <li class="Priv"><a href="">Bicycle Saftey Disclaimer</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script>
+    function myFunction() {
+      document.getElementById('gone').classList.toggle('hide')
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+
 
 </body>
+
 </html>
