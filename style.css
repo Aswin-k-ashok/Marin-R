@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+
+
+:root {
+    --marblu: #01A1DF;
+    --marfont: 'Oswald', sans-serif;
+}
+body{
+    font-family: var(--marfont) !important;
+    margin:0;
+    padding: 0;
+}
+h1{
+    font-weight: 700 !important;
+}
+
+section{
+    margin: 5em 0 5em 0;
+}
+
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+.my-logo{
+    height: 4em;
+}
+
+.leftmenu{
+    display: flex;
+    flex-direction: row;
+}
+
+.brand-title{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul{
+    margin:0;
+    padding:0;
+    display: flex; /*flex */
+    align-items: center;
+    list-style: none;
+    font-size: 1.5em;
+font-weight: 600;
+}
+
+.navbar-links li{
+    padding: 1rem;
+    display: block;
+    
+}
+
+.rightlist{
+    position: absolute;
+    top:.75rem;
+    right: 1rem;
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.rightlist li{
+    list-style: none;
+    margin-left: 1em;
+}
+
+.toggle-button{
+    /* position: ; */
+    top: .75rem;
+    right: 1rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    display: flex;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* coverArea section */
+
+.somesection {margin-top:50px!important;}
+body {
+  font-size:17px;
+  font-family:Helvetica Neue;
+}
+img {max-width:100%;}
+
+.overlay-text {
+  font-size:3.5vw;
+  float:left;
+  width:43%; /*important*/
+  bottom:30vw; /*important*/
+  padding: 25px;
+  background:#f7f7f7;
+  position:relative;
+}
+
+.madeFF{
+    color: var(--marblu);
+}
+
+
+
+/* top-cards */
+
+.top-cards button{
+
+    color:white;
+    background-color: black;
+    border-radius: 0.2em;
+    border: none;
+    padding: 0.7em;
+    font-weight: 700;
+}
+
+.top-cards h4{
+    font-family: 'Segoe UI';
+}
+
+
+
+
+
+/* last footer */
+
+#foot-input{
+    border: none;
+padding-left: 2em;
+border-radius: 0.2em;
+height: 2.7em;
+}
+
+#signUp{
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+
+
+
+#FootIcons li i{
+    font-size: 2.1em;
+    margin: 0.4em;
+}
+
+
+ul .Priv a{
+    color: black !important; 
+    font-weight: 500;
+}
+
+
+@media (max-width: 1100px) {
+
+    .toggle-button{
+       
+        top: .75rem;
+        right: 1rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        background-color: transparent;
+        border: none;
+    }
+
+ 
+
+  .leftmenu{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .navbar-links ul{
+      flex-direction: column;
+      align-items: flex-start;
+      display: flex;
+  }
+
+  .navbar-links{
+      display: none;
+  }
+
+
+  /* .top-cards */
+
+
+  #row-Margin{
+    margin-top: 14em;
+    }
+
+  .top-cards h1{
+      font-size: 1em;
+  }
+  .top-cards h4{
+      font-size: 1em;
+  }
+
+
+  
+  
+ 
+
+
+    
+} 
+
+
+@media (max-width: 750px) {
+
+    .toggle-button{
+       
+        top: .75rem;
+        right: 1rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        background-color: transparent;
+        border: none;
+    }
+
+ 
+
+  .leftmenu{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .navbar-links ul{
+      flex-direction: column;
+      align-items: flex-start;
+      display: flex;
+  }
+
+  .navbar-links{
+      display: none;
+  }
+
+  /* cover area section */
+
+  .overlay-text {
+    font-size: 5vw;
+    float: left;
+    width: 100%;
+    bottom: 0vw;
+    padding: 20px;
+    background: #f7f7f7;
+    position: relative;
+}
+  
+/* top cards section */
+
+#row-Margin{
+    margin-top: 12em;
+}
+  
+ 
+
+
+    
+}       /* media end */
+
+
